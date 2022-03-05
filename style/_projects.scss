@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+  background: rgb(245, 242, 242);
+}
+
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  h2 {
+    margin: 5rem;
+  }
+}
+.travelYa,
+.Marina,
+.fishHunt {
+  flex: 1 1 40rem;
+}
+.travelWeb,
+.photoWeb,
+.my-game {
+  width: 75%;
+  height: auto;
+  border-radius: 2rem;
+}
